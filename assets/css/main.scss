@@ -1,0 +1,40 @@
+/**
+ * --------------------------------------------------------------------
+ * Load components
+ * --------------------------------------------------------------------
+ */
+ @import "components/variables";
+ @import "components/mixins";
+ @import "components/default";
+
+
+/**
+ * --------------------------------------------------------------------
+ * Load elements's style follow screen
+ * --------------------------------------------------------------------
+ */
+ @import "components/template";
+
+ @media (max-width: $screen-md-max) {
+ 	$container-width: $screen-md-min - 20px;
+
+ 	@import "components/template";
+ }
+  
+ @media (max-width: $screen-sm-max) {
+ 	$container-width: $screen-sm-min - 20px;
+
+ 	@import "components/template";
+ }
+
+ @media (max-width: $screen-xs-max) {
+ 	$container-width: $screen-xs-min - 20px;
+
+ 	@import "components/template";
+ }
+
+ @media (max-width: $screen-ss-max) {
+ 	$container-width: $screen-ss-min - 20px;
+
+ 	@import "components/template";
+ }

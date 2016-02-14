@@ -1,0 +1,66 @@
+/**
+ * --------------------------------------------------------------------
+ * Set default screen width
+ * --------------------------------------------------------------------
+ */
+// ss: supper-small
+// xs: extra-small
+// sm: small
+// md: middle
+// lg: large
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-xs-min: 540px;
+$screen-ss-max: ($screen-xs-min - 1);
+$screen-ss-min: 320px;
+
+/**
+ * --------------------------------------------------------------------
+ * Set default column width
+ * --------------------------------------------------------------------
+ */
+$container-width: 1180px;
+$menu-width: 212px;
+$content-width: 520px;
+$suggest-width: 212px;
+$branding-width: 176px;
+$content-mini-width: 300px;
+
+/**
+ * --------------------------------------------------------------------
+ * Set standard space
+ * --------------------------------------------------------------------
+ */
+$standard-padding: 12px;
+$standard-margin: 12px;
+$standard-height: 30px;
+
+/**
+ * --------------------------------------------------------------------
+ * Set default color
+ * --------------------------------------------------------------------
+ */
+$bg-color: #ffffff;
+$main-color: #1f9ed9;
+$text-color: #333333;
+$blur-text-color: #666666;
+$blur-color: #ececec;
+$border-color: #cccccc;
+$nav-color: #fbf9e8;
+$alert-color: #dd4646;
+$note-color: #0a5c85;
+$up-color: #3bc000;
+$fb-color: #45619d;
+$tw-color: #4e9fd7;
+$rss-color: #f86811;
+
+/**
+ * --------------------------------------------------------------------
+ * Set default font
+ * --------------------------------------------------------------------
+ */
+$font-family: "Segoe UI","Helvetica Neue",Helvetica,Arial,freesans,sans-serif;

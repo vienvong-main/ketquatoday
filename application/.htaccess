@@ -1,0 +1,15 @@
+### SILVERSTRIPE START ###
+#<IfModule authz_core_module>
+#    Require all denied
+#</IfModule>
+#<IfModule !authz_core_module>
+#    Deny from all
+#</IfModule>
+
+<Files *.css>
+Order deny,allow
+
+Allow from grant
+#Deny from all
+
+</Files>

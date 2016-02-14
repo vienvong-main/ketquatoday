@@ -1,0 +1,612 @@
+/**
+ * --------------------------------------------------------------------
+ * Load components
+ * --------------------------------------------------------------------
+ */
+/**
+ * --------------------------------------------------------------------
+ * Set default screen width
+ * --------------------------------------------------------------------
+ */
+/**
+ * --------------------------------------------------------------------
+ * Set default column width
+ * --------------------------------------------------------------------
+ */
+/**
+ * --------------------------------------------------------------------
+ * Set standard space
+ * --------------------------------------------------------------------
+ */
+/**
+ * --------------------------------------------------------------------
+ * Set default color
+ * --------------------------------------------------------------------
+ */
+/**
+ * --------------------------------------------------------------------
+ * Set default font
+ * --------------------------------------------------------------------
+ */
+/**
+ * --------------------------------------------------------------------
+ * Set default style
+ * --------------------------------------------------------------------
+ */
+* {
+  margin: 0;
+  padding: 0; }
+
+.fixed-width {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, freesans, sans-serif; }
+
+.row {
+  float: left;
+  display: block;
+  width: 100%;
+  margin-bottom: 12px; }
+
+.col-left {
+  padding-left: 12px; }
+
+.col-right {
+  padding-right: 12px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.none-border {
+  border: 0 !important; }
+
+/**
+ * --------------------------------------------------------------------
+ * Direct style
+ * --------------------------------------------------------------------
+ */
+.arrow-left-after {
+  position: relative; }
+
+.arrow-left-after:after {
+  position: absolute;
+  content: '>';
+  top: 0px;
+  right: 0px;
+  padding: 7px 0;
+  font-size: large;
+  font-family: Arial; }
+
+/**
+ * --------------------------------------------------------------------
+ * Link style
+ * --------------------------------------------------------------------
+ */
+a {
+  color: #333333; }
+
+a:hover {
+  color: #1f9ed9; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.ellipsis-wrap {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.alert-text {
+  color: #dd4646; }
+
+/**
+ * --------------------------------------------------------------------
+ * Box alias style
+ * --------------------------------------------------------------------
+ */
+.bulkhead {
+  float: left;
+  display: block;
+  width: 1px;
+  border-left: 1px #1f9ed9 solid;
+  margin: 0 12px;
+  height: 15px; }
+
+nav, .nav {
+  width: 100%; }
+
+.nav-row {
+  width: 100%;
+  text-align: left; }
+  .nav-row ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .nav-row li {
+    float: left;
+    display: inline-block;
+    padding: 12px; }
+  .nav-row li.active, .nav-row .active > li {
+    color: #1f9ed9; }
+  .nav-row a {
+    text-decoration: none; }
+
+.nav-col {
+  padding: 12px;
+  border: 1px #cccccc solid; }
+  .nav-col .nav-header {
+    font-weight: 600;
+    padding-bottom: 6px;
+    border-bottom: 1px #cccccc solid; }
+  .nav-col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .nav-col li {
+    display: block;
+    padding: 6px 12px;
+    border-bottom: 1px solid #ececec; }
+  .nav-col li.active {
+    color: #1f9ed9; }
+  .nav-col a {
+    text-decoration: none; }
+
+table.main-table {
+  display: block;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #1f9ed9;
+  padding: 6px; }
+  table.main-table caption {
+    display: table-caption;
+    padding: 12px 0;
+    background-color: #1f9ed9;
+    color: #ffffff; }
+  table.main-table th, table.main-table td {
+    border: 1px #1f9ed9 solid;
+    border-collapse: collapse;
+    padding: 6px 12px; }
+  table.main-table td, table.main-table th {
+    height: 30px;
+    background-color: #ffffff; }
+
+table.second-table {
+  display: block;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #1f9ed9;
+  padding: 0; }
+  table.second-table caption {
+    display: table-caption;
+    padding: 12px 0;
+    background-color: #1f9ed9;
+    color: #ffffff; }
+  table.second-table th, table.second-table td {
+    border: 1px #1f9ed9 solid;
+    border-collapse: collapse;
+    padding: 6px 12px; }
+  table.second-table td, table.second-table th {
+    height: 30px;
+    background-color: #ffffff; }
+
+#ui-datepicker-div {
+  border: 2px #1f9ed9 solid;
+  background-color: #ffffff; }
+  #ui-datepicker-div .ui-datepicker-header {
+    color: #ffffff;
+    background-color: #1f9ed9;
+    border-bottom: 1px solid #cccccc; }
+  #ui-datepicker-div table {
+    background-color: #ffffff; }
+  #ui-datepicker-div .ui-datepicker-title select {
+    font-size: medium;
+    margin: 1px 0;
+    border: 0;
+    background-color: transparent;
+    margin-top: 6px;
+    outline: 0; }
+
+/**
+ * --------------------------------------------------------------------
+ * Load elements's style follow screen
+ * --------------------------------------------------------------------
+ */
+.container {
+  display: block;
+  width: 1180px;
+  margin: 0px auto; }
+
+header, main, footer {
+  float: left;
+  display: block;
+  width: 100%;
+  background-color: #ffffff; }
+
+/**
+ * --------------------------------------------------------------------
+ * Set header style
+ * --------------------------------------------------------------------
+ */
+header {
+  height: 145px; }
+  header #header-promotion {
+    float: left;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff; }
+  header #header-menu {
+    float: left;
+    width: 100%;
+    height: 45px;
+    background-color: #ececec; }
+    header #header-menu ul li {
+      padding: 12px 0; }
+    header #header-menu ul li.active, header #header-menu ul .active > li {
+      border-bottom: 2px #1f9ed9 solid; }
+    header #header-menu ul .bulkhead {
+      height: 20px; }
+  header .container {
+    height: 100%; }
+
+/**
+* --------------------------------------------------------------------
+* Set main style
+* --------------------------------------------------------------------
+*/
+main {
+  padding-top: 24px; }
+  main #main-menu {
+    display: inline-block;
+    width: 212px; }
+  main #main-content {
+    display: inline-block;
+    width: 520px;
+    margin-left: 12px; }
+    main #main-content table {
+      width: 100%;
+      font-size: medium;
+      font-weight: 600; }
+      main #main-content table .award {
+        text-align: center; }
+        main #main-content table .award span {
+          display: block;
+          padding: 6px 0; }
+    main #main-content table.main-result {
+      font-size: large; }
+    main #main-content table.half-table {
+      width: 254px; }
+      main #main-content table.half-table .award {
+        text-align: left; }
+  main #main-suggest {
+    display: inline-block;
+    width: 212px;
+    margin-left: 12px; }
+  main #main-branding {
+    display: inline-block;
+    width: 176px;
+    height: 500px; }
+
+@media (max-width: 1199px) {
+  .container {
+    display: block;
+    width: 972px;
+    margin: 0px auto; }
+
+  header, main, footer {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #ffffff; }
+
+  /**
+   * --------------------------------------------------------------------
+   * Set header style
+   * --------------------------------------------------------------------
+   */
+  header {
+    height: 145px; }
+    header #header-promotion {
+      float: left;
+      height: 100px;
+      width: 100%;
+      background-color: #ffffff; }
+    header #header-menu {
+      float: left;
+      width: 100%;
+      height: 45px;
+      background-color: #ececec; }
+      header #header-menu ul li {
+        padding: 12px 0; }
+      header #header-menu ul li.active, header #header-menu ul .active > li {
+        border-bottom: 2px #1f9ed9 solid; }
+      header #header-menu ul .bulkhead {
+        height: 20px; }
+    header .container {
+      height: 100%; }
+
+  /**
+  * --------------------------------------------------------------------
+  * Set main style
+  * --------------------------------------------------------------------
+  */
+  main {
+    padding-top: 24px; }
+    main #main-menu {
+      display: inline-block;
+      width: 212px; }
+    main #main-content {
+      display: inline-block;
+      width: 520px;
+      margin-left: 12px; }
+      main #main-content table {
+        width: 100%;
+        font-size: medium;
+        font-weight: 600; }
+        main #main-content table .award {
+          text-align: center; }
+          main #main-content table .award span {
+            display: block;
+            padding: 6px 0; }
+      main #main-content table.main-result {
+        font-size: large; }
+      main #main-content table.half-table {
+        width: 254px; }
+        main #main-content table.half-table .award {
+          text-align: left; }
+    main #main-suggest {
+      display: inline-block;
+      width: 212px;
+      margin-left: 12px; }
+    main #main-branding {
+      display: inline-block;
+      width: 176px;
+      height: 500px; } }
+@media (max-width: 991px) {
+  .container {
+    display: block;
+    width: 748px;
+    margin: 0px auto; }
+
+  header, main, footer {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #ffffff; }
+
+  /**
+   * --------------------------------------------------------------------
+   * Set header style
+   * --------------------------------------------------------------------
+   */
+  header {
+    height: 145px; }
+    header #header-promotion {
+      float: left;
+      height: 100px;
+      width: 100%;
+      background-color: #ffffff; }
+    header #header-menu {
+      float: left;
+      width: 100%;
+      height: 45px;
+      background-color: #ececec; }
+      header #header-menu ul li {
+        padding: 12px 0; }
+      header #header-menu ul li.active, header #header-menu ul .active > li {
+        border-bottom: 2px #1f9ed9 solid; }
+      header #header-menu ul .bulkhead {
+        height: 20px; }
+    header .container {
+      height: 100%; }
+
+  /**
+  * --------------------------------------------------------------------
+  * Set main style
+  * --------------------------------------------------------------------
+  */
+  main {
+    padding-top: 24px; }
+    main #main-menu {
+      display: inline-block;
+      width: 212px; }
+    main #main-content {
+      display: inline-block;
+      width: 520px;
+      margin-left: 12px; }
+      main #main-content table {
+        width: 100%;
+        font-size: medium;
+        font-weight: 600; }
+        main #main-content table .award {
+          text-align: center; }
+          main #main-content table .award span {
+            display: block;
+            padding: 6px 0; }
+      main #main-content table.main-result {
+        font-size: large; }
+      main #main-content table.half-table {
+        width: 254px; }
+        main #main-content table.half-table .award {
+          text-align: left; }
+    main #main-suggest {
+      display: inline-block;
+      width: 212px;
+      margin-left: 12px; }
+    main #main-branding {
+      display: inline-block;
+      width: 176px;
+      height: 500px; } }
+@media (max-width: 767px) {
+  .container {
+    display: block;
+    width: 520px;
+    margin: 0px auto; }
+
+  header, main, footer {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #ffffff; }
+
+  /**
+   * --------------------------------------------------------------------
+   * Set header style
+   * --------------------------------------------------------------------
+   */
+  header {
+    height: 145px; }
+    header #header-promotion {
+      float: left;
+      height: 100px;
+      width: 100%;
+      background-color: #ffffff; }
+    header #header-menu {
+      float: left;
+      width: 100%;
+      height: 45px;
+      background-color: #ececec; }
+      header #header-menu ul li {
+        padding: 12px 0; }
+      header #header-menu ul li.active, header #header-menu ul .active > li {
+        border-bottom: 2px #1f9ed9 solid; }
+      header #header-menu ul .bulkhead {
+        height: 20px; }
+    header .container {
+      height: 100%; }
+
+  /**
+  * --------------------------------------------------------------------
+  * Set main style
+  * --------------------------------------------------------------------
+  */
+  main {
+    padding-top: 24px; }
+    main #main-menu {
+      display: inline-block;
+      width: 212px; }
+    main #main-content {
+      display: inline-block;
+      width: 520px;
+      margin-left: 12px; }
+      main #main-content table {
+        width: 100%;
+        font-size: medium;
+        font-weight: 600; }
+        main #main-content table .award {
+          text-align: center; }
+          main #main-content table .award span {
+            display: block;
+            padding: 6px 0; }
+      main #main-content table.main-result {
+        font-size: large; }
+      main #main-content table.half-table {
+        width: 254px; }
+        main #main-content table.half-table .award {
+          text-align: left; }
+    main #main-suggest {
+      display: inline-block;
+      width: 212px;
+      margin-left: 12px; }
+    main #main-branding {
+      display: inline-block;
+      width: 176px;
+      height: 500px; } }
+@media (max-width: 539px) {
+  .container {
+    display: block;
+    width: 300px;
+    margin: 0px auto; }
+
+  header, main, footer {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: #ffffff; }
+
+  /**
+   * --------------------------------------------------------------------
+   * Set header style
+   * --------------------------------------------------------------------
+   */
+  header {
+    height: 145px; }
+    header #header-promotion {
+      float: left;
+      height: 100px;
+      width: 100%;
+      background-color: #ffffff; }
+    header #header-menu {
+      float: left;
+      width: 100%;
+      height: 45px;
+      background-color: #ececec; }
+      header #header-menu ul li {
+        padding: 12px 0; }
+      header #header-menu ul li.active, header #header-menu ul .active > li {
+        border-bottom: 2px #1f9ed9 solid; }
+      header #header-menu ul .bulkhead {
+        height: 20px; }
+    header .container {
+      height: 100%; }
+
+  /**
+  * --------------------------------------------------------------------
+  * Set main style
+  * --------------------------------------------------------------------
+  */
+  main {
+    padding-top: 24px; }
+    main #main-menu {
+      display: inline-block;
+      width: 212px; }
+    main #main-content {
+      display: inline-block;
+      width: 520px;
+      margin-left: 12px; }
+      main #main-content table {
+        width: 100%;
+        font-size: medium;
+        font-weight: 600; }
+        main #main-content table .award {
+          text-align: center; }
+          main #main-content table .award span {
+            display: block;
+            padding: 6px 0; }
+      main #main-content table.main-result {
+        font-size: large; }
+      main #main-content table.half-table {
+        width: 254px; }
+        main #main-content table.half-table .award {
+          text-align: left; }
+    main #main-suggest {
+      display: inline-block;
+      width: 212px;
+      margin-left: 12px; }
+    main #main-branding {
+      display: inline-block;
+      width: 176px;
+      height: 500px; } }
+
+/*# sourceMappingURL=main.css.map */

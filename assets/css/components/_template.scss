@@ -1,0 +1,112 @@
+.container {
+	display: block;
+	width: $container-width;
+	margin: 0px auto;
+}
+
+header, main, footer {
+	float: left;
+ 	display: block;
+ 	width: 100%;
+ 	background-color: $bg-color;
+}
+
+/**
+ * --------------------------------------------------------------------
+ * Set header style
+ * --------------------------------------------------------------------
+ */
+ header {
+ 	height: 145px;
+
+ 	#header-promotion {
+ 		float: left;
+ 		height: 100px;
+ 		width: 100%;
+ 		background-color: $bg-color;
+ 	}
+
+ 	#header-menu {
+ 		float: left;
+ 		width: 100%;
+ 		height: 45px;
+ 		background-color: $blur-color;
+
+ 		ul {
+ 			li {
+ 				padding: $standard-padding 0; 
+ 			}
+
+ 			li.active, .active > li {
+				border-bottom: 2px $main-color solid;
+			}
+
+ 			.bulkhead {
+	 			height: 20px;
+	 		}
+ 		}
+ 	}
+
+ 	.container {
+ 		height: 100%;
+ 	}
+ }
+
+ /**
+ * --------------------------------------------------------------------
+ * Set main style
+ * --------------------------------------------------------------------
+ */
+ main {
+ 	padding-top: $standard-padding * 2;
+
+ 	#main-menu {
+ 		display: inline-block;
+ 		width: $menu-width;
+ 	}
+
+ 	#main-content {
+ 		display: inline-block;
+ 		width: $content-width;
+ 		margin-left: $standard-margin;
+
+ 		table {
+ 			width: 100%;
+ 			font-size: medium;
+ 			font-weight: 600;
+
+ 			.award {
+ 				text-align: center;
+
+ 				span {
+ 					display: block;
+ 					padding: 6px 0;
+ 				}
+ 			}
+ 		}
+
+ 		table.main-result {
+ 			font-size: large;
+ 		}
+
+ 		table.half-table {
+ 			width: ($content-width - $standard-margin) / 2;
+
+ 			.award {
+ 				text-align: left
+ 			}
+ 		}
+ 	}
+
+ 	#main-suggest {
+ 		display: inline-block;
+ 		width: $suggest-width;
+ 		margin-left: $standard-margin;
+ 	}
+
+ 	#main-branding {
+ 		display: inline-block;
+ 		width: $branding-width;
+ 		height: 500px;
+ 	}
+ }
